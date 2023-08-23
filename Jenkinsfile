@@ -18,7 +18,6 @@ pipeline {
         }
         stage('Manual Approval') {
             steps {
-                sh './jenkins/scripts/deliver.sh' 
                 input message: 'Lanjutkan ke tahap Deploy?'
             }
         }
